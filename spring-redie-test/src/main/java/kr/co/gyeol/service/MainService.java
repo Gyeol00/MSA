@@ -51,7 +51,7 @@ public class MainService {
         setOps.add(key, values);
     }
     public Set<String> getFromSet(String key){
-        SetOperations<String, String> setOps = stringRedisTemplate.opsForSet();
+        SetOperations<String, String> setOps = stringRedisTemplate.opsForSet(); // 제네릭 선언
         return setOps.members(key);
     }
 

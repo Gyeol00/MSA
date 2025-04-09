@@ -57,4 +57,15 @@ public class MainController {
         mainService.addToSet(key, value);
     }
 
+    @GetMapping("/redis/getFromSet")
+    public void getFromSet(String key) {
+        mainService.getFromSet(key);
+    }
+
+//    @GetMapping("/redis/set/{key}")
+//    public ResponseEntity<Set<String>> getFromSet(@PathVariable("key") String key){
+//        Set<String> resultSet = mainService.getFromSet(key);
+//        return ResponseEntity.ok().body(resultSet);
+//    }
+
 }

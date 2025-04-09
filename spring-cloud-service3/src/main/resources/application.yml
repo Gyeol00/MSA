@@ -1,0 +1,14 @@
+spring:
+    application:
+        name: service3
+    profiles:
+        active: dev
+    config:
+        import: optional:configserver:http://localhost:9000
+
+eureka:
+    client:
+        register-whit-eureka: true
+        fetch-registry: true
+        service-url:
+            defaultZone: http://localhost:8888/eureka
