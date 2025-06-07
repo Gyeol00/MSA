@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <body>
+        <h3>로그인</h3>
+
+        <form>
+            <input type="text" name="uid"><br>
+            <input type="password" name="pass"><br>
+            <input type="submit" value="로그인"><br>
+        </form>
+
+        <!-- 표준 기술이기 때문에 주소는 같음 -->
+        <a th:href="@{/oauth2/authorization/google}">Google 로그인</a>
+        <a th:href="@{/oauth2/authorization/naver}">Naver 로그인</a>
+        <a th:href="@{/oauth2/authorization/kakao}">Kakao 로그인</a>
+
+    </body>
+</html>
